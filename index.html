@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Github UserFinder</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link rel="stylesheet" href="./css/animate.css">
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+
+        <section id="header">
+            <div class="userinputsection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <div class="updown" >
+                            <img src="./images/github-icon.png"  class="animated-icon" alt="github" data-wow-duration=".9s" data-wow-delay="0s">
+                           </div>
+                               
+                            
+                          
+                        </div>
+                        <div class="col-md-8"> 
+                            <h1 class="wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0s">UserFinder for github</h1>
+                            <p>Check out the repos, followers, and more, just <br> by entering a username. </p>
+                            <form>
+                                <input type="text" id="userID" name="userID" placeholder="Enter Username" required>
+                                <span id="loading-button" class="circle"><a href="#followers"></a></span>
+                               
+                                  
+                            </form>
+                            <button id="submit-btn" onclick="getUserInput()">SUBMIT</button>
+                            <div id="movedown">
+                               
+                                <i class="fas fa-caret-down"></i>
+                                
+                            </div>
+                        
+                        </div>
+                        <div class="col-md-2">
+                            <div class="updown">
+                                <img src="./images/github-icon.png"  class="animated-icon" alt="github">
+                               </div>
+                                   
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="outputsection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <h2 id="error"></h2>
+                            <div id="userimage" class="wow fadeIn">
+                                
+                            </div>
+                            <div class="userdata wow fadeIn">
+                                <h3 id="userName"></h3>
+                                <p id="bio"></p>
+                                <p>Followers : <span id=followers>00</span></p> <p>Repository : <span id="repo">00</span></p> <p>Following : <span id="following">00</span></p>
+                                <p>Location : <span id="location">--</span></p>
+                                <p>Github Profile URL : <a href="" id="userURL" target="blank">--</a> </p>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+
+        <script src="./script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+            <script src="./wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
+    </body>
+
+</html>

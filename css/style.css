@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animated-icon {
+    animation-name: iconAnimation;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+}
+
+.updown {
+    position: absolute;
+    top: 30%;
+    animation-name: updown;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+}
+
+@keyframes updown {
+    50% {
+        transform: translateY(100px);
+
+    }
+
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+@keyframes iconAnimation {
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.userinputsection {
+    height: auto;
+
+    padding-bottom: 150px;
+
+}
+
+#header {
+    background: url(../images/bg-main.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    text-align: center;
+}
+
+/* font-family: 'Space Grotesk', sans-serif; */
+#header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4rem;
+    color: #526842;
+    text-align: center;
+    font-weight: bolder !important;
+    margin-top: 13rem;
+}
+
+#header p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+#header form {
+    font-family: 'Space Grotesk', sans-serif;
+    height: 7rem;
+    width: 12rem;
+    position: absolute;
+    left: 39%;
+    margin-bottom: 10rem;
+}
+
+input:active {
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+input {
+
+    color: #fff;
+
+    height: 3rem;
+    border-bottom: 2px solid #526842 !important;
+    outline: none;
+    border: 0px;
+    background: transparent !important;
+    
+}
+
+input::placeholder {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 25px !important;
+}
+#loading-button{
+    display: none;
+}
+.circle { 
+    position: absolute; 
+    top: 60%; 
+    left: 40%; 
+    transform: translate(-40%, -50%); 
+    animation: effect 1s linear infinite; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    border: 6px solid #526842; 
+    border-top-color: #fff; 
+ 
+    
+} 
+
+@keyframes effect { 
+    0% { 
+        transform: rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg); 
+    } 
+
+}
+#submit-btn {
+    cursor: pointer;
+    height: 3rem;
+    width: 7rem;
+    background: transparent;
+    border: 2px solid #526842;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 4rem;
+    display: block;
+    position: absolute;
+    outline: none;
+    left: 45%;
+  
+}
+
+#submit-btn:hover {
+    background-color: #526842;
+    border: 2px solid #526842;
+    transition: .4s;
+}
+
+
+
+#userimage {
+    
+    margin-top: 2rem;
+}
+
+#userimage img {
+border-radius: 100px;
+    height: 200px;
+    width: 200px;
+
+}
+
+#userName {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    color: #526842;
+    text-align: center;
+    font-weight: bolder !important;
+
+}
+
+.userdata h3{
+    margin-top: 2rem;
+}
+#bio {
+    display: block !important;
+}
+.userdata p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem !important;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+}
+
+.userdata span {
+    color: #526842;
+    font-weight: bold;
+}
+
+.userdata a {
+    text-decoration: none !important;
+    color: #526842;
+}
+
+.userdata a:hover {
+    color: #526842;
+
+}
+
+#movedown {
+    height: 3rem;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    display: none;
+   
+}
+#movedown i{
+    font-size: 2.5rem;
+    color: #526842;
+    animation-name: movedownbtn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes movedownbtn {
+    50% {
+      transform: translateY(10px);
+
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.outputsection h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: #fff !important;
+    text-align: center;
+   display: none;
+}
